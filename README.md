@@ -3,7 +3,8 @@
 ## Project Name: Budgeting app
 
 ## Project Overview
-This is the fifth project assignment for General Assembly's Software Engineering Immersive program. This is my final project. This will be financial - budgeting app to create your personal budget  and track your incomes and expences.
+This is the fifth project aka Final Project assignment for General Assembly's Software Engineering Immersive program. This will be financial - budgeting app. It will allow you to create your personal budget and track your incomes and expences. Coming from financial background and having passion in both economics and programming I wanted to create app that will integrate my knoledge in both fields. At the same time I always had need in app that will allow to track my expenses and would be free for use. Still even if I can find free app in the vast expanses of Internet, that app would not give me reports that I need and would be full of advertisement content. And in general I always wanted to create such app myself from scratch.
+So I tried to make my dream real.
 
 ### Description aka User's Story
 My budgeting app will allow users to signup or login into his/her account. The user will be able to create his income/expense and then see reflection in his wallets. The user can track his money flow throw his wallets. The user will also be able to update a income/expense and delete it.
@@ -22,8 +23,18 @@ Here are the requirements:
 - Use Semantic UI for styling
 - Use React Router for client side routing.
 
-# User Story
+### User's Story
 
+* My user needs some free app to track money flow.
+* User finds my for now free app :) and starts to use it !
+* In order to use my app user needs either have already account or sign up
+* Sign up process is easy. User just needs to fill up generic form
+* After user signed up he needs to log in.
+* After user is logged in, whole functionality of my app will be available for him, which will include following: 
+- Will be able to See User's accounts and see reports generated upon his income/expenses, and filter his income and expenses by category, date.
+- Will be able to create income/expense
+- Will be able to update income/expense (If he made typo when he created operation)
+- Will be able to delete income/expense (If he created operation by mistake)
 
 ### Project Schedule table
 
@@ -67,6 +78,7 @@ An explanation of the major challenges expected while building this app and how 
 * D3 , Canvas.js , Styling with graphs
 * Categorized by cash and credit
 * Currency differantiation
+* Implement Active Storage and using AWS S3 for file uploads
 * Implement Limits for app
 * Implement Prioraty for Expenses
 * Search operation (income/expense) based on name/user/cuisine type/ingredients
@@ -81,10 +93,12 @@ An explanation of the major challenges expected while building this app and how 
 ### Entity Relationship Diagram (ERD)
 
 
-
 ### Component hierarchy
 
+
 ### Screenshots
+
+- Coming Soon
 
 ### Deployment
 This project's back-end will be deployed on Heroku.com and front-end on Surge. 
