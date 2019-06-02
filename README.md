@@ -6,7 +6,7 @@
 This is the fifth project aka Final Project assignment for General Assembly's Software Engineering Immersive program. This will be financial - budgeting app. It will allow you to create your personal budget and track your incomes and expences. Coming from financial background and having passion in both economics and programming I wanted to create app that will integrate my knoledge in both fields. At the same time I always had need in app that will allow to track my expenses and would be free for use. Still even if I can find free app in the vast expanses of Internet, that app would not give me reports that I need and would be full of advertisement content. And in general I always wanted to create such app myself from scratch.
 So I tried to make my dream real.
 
-### Description aka User's Story
+### Description 
 My budgeting app will allow users to signup or login into his/her account. The user will be able to create his income/expense and then see reflection in his wallets. The user can track his money flow throw his wallets. The user will also be able to update a income/expense and delete it.
 
 Here are the requirements: 
@@ -90,11 +90,46 @@ An explanation of the major challenges expected while building this app and how 
 ### Wireframes
 - Wireframe for main page: 
 
+![main page](https://user-images.githubusercontent.com/39839481/58766018-ae99d480-8547-11e9-821b-c3a8a359d6f9.png)
+
+- Wireframe for login page: 
+
+![login](https://user-images.githubusercontent.com/39839481/58766032-ea349e80-8547-11e9-92ce-8587d2eee3d0.png)
+
+- Wireframe for signup page: 
+
+![Signup](https://user-images.githubusercontent.com/39839481/58766028-db4dec00-8547-11e9-870f-796656dfa277.png)
+
+- Wireframe for my account page: 
+
+![myaccount](https://user-images.githubusercontent.com/39839481/58766034-ff113200-8547-11e9-859d-321cc6d6e924.png)
+
+- Wireframe for create operation page: 
+
+![createOperation](https://user-images.githubusercontent.com/39839481/58766040-10f2d500-8548-11e9-8d2d-d8b8be0057c9.png)
+
+- Wireframe for reports page: 
+
+![reports](https://user-images.githubusercontent.com/39839481/58766058-41d30a00-8548-11e9-8a39-2e60afbfb0fd.png)
+
+- Wireframe for incomes page: 
+
+![incomes](https://user-images.githubusercontent.com/39839481/58766056-367fde80-8548-11e9-89a5-1b6dc4a3202c.png)
+
+- Wireframe for expenses page: 
+
+![expenses](https://user-images.githubusercontent.com/39839481/58766055-2b2cb300-8548-11e9-9b75-c05db631dea7.png)
+
 ### Entity Relationship Diagram (ERD)
+
+- ERD MVP: 
+
+![ERD MVP](https://user-images.githubusercontent.com/39839481/58766121-f8cf8580-8548-11e9-904b-0ea1c988589d.png)
 
 
 ### Component hierarchy
 
+![ComponentHierarchyForProject5](https://user-images.githubusercontent.com/39839481/58766010-95912380-8547-11e9-82dd-a3b130aade4c.png)
 
 ### Screenshots
 
