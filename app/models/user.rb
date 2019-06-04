@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_one_attached :image
   validates :username, presence: true, length: { maximum: 50 }
   validates :email,
   presence: true,
