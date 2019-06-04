@@ -2,8 +2,8 @@ class OperationsController < ApplicationController
   before_action :get_operation , only: [:show,:edit,:new,:update,:destroy]
 
   def index
-    @operation = Operation.all
-    render json: @operations
+    @operations = Operation.all
+    render json: @operations, :include => {:wallet => {:only => :name}}, :except => [:created_at, :updated_at]
   end
   def show
   end
@@ -11,7 +11,7 @@ class OperationsController < ApplicationController
   end
   def create
     @newOperation = Operation.new(operation_params)
-    binding.irb
+
     if @newOperation.save
           render json: @newOperation, status: :created
     else
@@ -19,7 +19,14 @@ class OperationsController < ApplicationController
               status: :unprocessable_entity
     end
   end
-    
+  def destroy
+    if @operation.destroy
+      render json: @operation, status: :created
+    else
+      render json: { errors: @operation.errors.full_messages },
+              status: :unprocessable_entity
+    end
+  end 
   private
   
   def operation_params

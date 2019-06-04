@@ -10,7 +10,13 @@ class WalletsController < ApplicationController
   def new
   end
   def create
-    Wallet.new(wallet_params)
+    @newWallet =  Wallet.new(wallet_params)
+    if @newWallet.save
+          render json: @newWallet, status: :created
+    else
+      render json: { errors: @newWallet.errors.full_messages },
+              status: :unprocessable_entity
+    end
   end
     
   private
