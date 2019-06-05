@@ -23,6 +23,12 @@ class OperationsController < ApplicationController
   end
   def update
     @operation.update(operation_params)
+    if @operation.save
+      render json: @operation, status: :created
+    else
+      render json: { errors: @operation.errors.full_messages },
+      status: :unprocessable_entity
+    end
   end
   def destroy
     if @operation.destroy
