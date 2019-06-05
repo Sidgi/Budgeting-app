@@ -9315,3 +9315,318 @@ Processing by OperationsController#index as HTML
 Completed 200 OK in 27ms (Views: 14.1ms | ActiveRecord: 12.2ms)
 
 
+Started GET "/operations" for ::1 at 2019-06-04 22:01:04 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (1.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.6ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 301ms (Views: 297.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:01:12 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:01:16 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (3.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:01:20 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (1.3ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:02:23 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (1.3ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:02:45 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (7.7ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:04:18 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (1.0ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.7ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:04:42 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.6ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:04:49 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (1.0ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.2ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:05:04 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (0.7ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.6ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:06:05 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (0.8ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.6ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (2.9ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 135ms (Views: 129.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:06:33 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (0.7ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:06:56 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:07:02 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:08:55 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (1.1ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:09:03 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (1.8ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.6ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:09:07 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:09:43 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:09:48 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (4.0ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:09:50 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (0.8ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:15:11 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (1.1ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 35ms (Views: 28.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:15:15 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (3.6ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:17:17 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (2.1ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.6ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/operations" for ::1 at 2019-06-04 22:17:19 -0400
+Processing by OperationsController#index as HTML
+  [1m[36mOperation Load (2.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.4ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.3ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mCACHE Wallet Load (0.0ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+  [1m[36mWallet Load (0.5ms)[0m  [1m[34mSELECT  "wallets".* FROM "wallets" WHERE "wallets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/operations_controller.rb:6
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/wallets" for ::1 at 2019-06-04 22:17:21 -0400
+Processing by WalletsController#index as HTML
+  [1m[36mWallet Load (1.2ms)[0m  [1m[34mSELECT "wallets".* FROM "wallets"[0m
+  ↳ app/controllers/wallets_controller.rb:6
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 1.2ms)
+
+
