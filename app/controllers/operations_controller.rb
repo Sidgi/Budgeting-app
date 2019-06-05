@@ -19,6 +19,11 @@ class OperationsController < ApplicationController
               status: :unprocessable_entity
     end
   end
+  def edit
+  end
+  def update
+    @operation.update(operation_params)
+  end
   def destroy
     if @operation.destroy
       render json: @operation, status: :created
