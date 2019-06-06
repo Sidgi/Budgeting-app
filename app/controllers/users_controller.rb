@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   def index 
 
-    @users = User.all 
+    @users = User.all.with_attached_image
     render json: @users
   end
 
@@ -31,6 +31,6 @@ class UsersController < ApplicationController
   private
   
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation,:password_digest)
+    params.require(:user).permit(:username, :email, :password, :password_confirmation,:password_digest,:image)
   end
 end

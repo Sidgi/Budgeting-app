@@ -2,7 +2,7 @@ class OperationsController < ApplicationController
   before_action :get_operation , only: [:show,:edit,:new,:update,:destroy]
 
   def index
-    @operations = Operation.all
+    @operations = Operation.all.with_attached_image
     render json: @operations, :include => {:wallet => {:only => :name}}, :except => [:created_at, :updated_at]
   end
   def show
@@ -10,13 +10,14 @@ class OperationsController < ApplicationController
   def new
   end
   def create
+    binding.irb
     @newOperation = Operation.new(operation_params)
-
     if @newOperation.save
-          render json: @newOperation, status: :created
+      @newOperation.image.attach(operation_params[:image])
+      render json: @newOperation, status: :created
     else
       render json: { errors: @newOperation.errors.full_messages },
-              status: :unprocessable_entity
+      status: :unprocessable_entity
     end
   end
   def edit
@@ -41,7 +42,7 @@ class OperationsController < ApplicationController
   private
   
   def operation_params
-    params.require(:operation).permit(:name,:priority, :amount, :description, :date_of_expense,:category, :type_of_operation, :wallet_id)
+    params.permit(:name,:priority, :amount, :description, :date_of_expense,:category,:image, :type_of_operation, :wallet_id)
   end
   def get_operation
     @operation = Operation.find(params[:id])
