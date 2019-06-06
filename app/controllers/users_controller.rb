@@ -8,23 +8,23 @@ class UsersController < ApplicationController
   end
 
   def show 
+    @user = User.find(params[:id]).with_attached_image
     render json :@user
   end
 
   def new
     @user = User.new
-    render json: @user, status: :ok
+    render :json => @user.as_json(:only =>[:username,:email]), status: :ok
   end
 
   def create
     
     @user = User.new(user_params)
     if @user.save
-      # login(@user)
-          render json: @user, status: :created
+      render :json => @user.as_json(:only =>[:username,:email]), status: :created
     else
       render json: { errors: @user.errors.full_messages },
-              status: :unprocessable_entity
+      status: :unprocessable_entity
     end
   end  
   
