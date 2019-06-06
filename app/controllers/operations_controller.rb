@@ -10,7 +10,6 @@ class OperationsController < ApplicationController
   def new
   end
   def create
-    binding.irb
     @newOperation = Operation.new(operation_params)
     if @newOperation.save
       @newOperation.image.attach(operation_params[:image])
@@ -42,7 +41,7 @@ class OperationsController < ApplicationController
   private
   
   def operation_params
-    params.permit(:name,:priority, :amount, :description, :date_of_expense,:category,:image, :type_of_operation, :wallet_id)
+    params.require(:operation).permit(:name,:priority, :amount, :description, :date_of_expense,:category,:image, :type_of_operation, :wallet_id)
   end
   def get_operation
     @operation = Operation.find(params[:id])
