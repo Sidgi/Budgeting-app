@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize_request, except: :create
+  before_action :authorize_request, except: [:create,:show] 
 
   def index 
 
@@ -8,8 +8,8 @@ class UsersController < ApplicationController
   end
 
   def show 
-    @user = User.find(params[:id]).with_attached_image
-    render json :@user
+    @user = User.find(params[:id])
+    render json: @user , include: { wallets: {include: :operations}} , except: [:password_digest,:username,:created_at,:updated_at,:email,:id]
   end
 
   def new
@@ -31,6 +31,6 @@ class UsersController < ApplicationController
   private
   
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation,:password_digest,:image)
+    params.require(:user).permit(:id,:username, :email, :password, :password_confirmation,:password_digest,:image)
   end
 end

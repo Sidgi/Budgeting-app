@@ -2,10 +2,11 @@ class WalletsController < ApplicationController
   before_action :get_wallet , only: [:show,:edit,:new,:update,:destroy]
 
   def index
-    @wallets = Wallet.all
+    @wallets = Wallet.all 
     render json: @wallets
   end
   def show
+    render json: @wallet , :include => :operations
   end
   def new
   end
@@ -22,7 +23,7 @@ class WalletsController < ApplicationController
   private
   
   def wallet_params
-    params.require(:wallet).permit(:name, :currency, :limit, :cash_or_credit,:total, :user_id)
+    params.permit(:name, :currency, :limit, :cash_or_credit,:total, :user_id)
   end
   def get_wallet
     @wallet = Wallet.find(params[:id])

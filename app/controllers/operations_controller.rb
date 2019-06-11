@@ -11,6 +11,7 @@ class OperationsController < ApplicationController
   end
   def create
     @newOperation = Operation.new(operation_params)
+    
     if @newOperation.save
       @newOperation.image.attach(operation_params[:image])
       render json: @newOperation, status: :created
@@ -41,7 +42,7 @@ class OperationsController < ApplicationController
   private
   
   def operation_params
-    params.require(:operation).permit(:name,:priority, :amount, :description, :date_of_expense,:category,:image, :type_of_operation, :wallet_id)
+    params.require(:operation).permit(:id,:name,:priority, :amount, :description, :date_of_expense,:category,:image, :type_of_operation, :wallet_id).delete_if {|key, value| value.blank? }
   end
   def get_operation
     @operation = Operation.find(params[:id])
